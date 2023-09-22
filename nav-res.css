@@ -1,0 +1,144 @@
+body {
+  background-color: silver;
+}
+.container {
+  width: 95%;
+  background-color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+nav li {
+  display: inline-block;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  border: 1px solid grey;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: whitesmoke;
+}
+
+.flex-container1 {
+  display: flex;
+  margin-top: -20px;
+}
+
+.flex-container1 sidebar {
+  flex: 200px 0 0;
+  background-color: #212530;
+  padding: 50px 0;
+}
+
+.flex-container1 sidebar img {
+  width: 100%;
+}
+
+.flex-container1 main {
+  flex: 1 1;
+  background-color: #171b26;
+  color: white;
+  padding: 0 50px;
+}
+
+.flex-container1 h2 {
+  background-color: #212530;
+  display: inline-block;
+}
+
+.flex-container2 {
+  display: flex;
+}
+
+.flex-container2 > div {
+  flex: 1;
+}
+.mt-2 {
+  margin-top: 3rem;
+}
+
+.mb-1 {
+  margin-bottom: 1.5rem;
+}
+
+#education h1 {
+  margin: 0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.flex-container3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  flex: 220px;
+  margin-bottom: 40px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h4 {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li:last-child {
+    margin: 10px 0;
+  }
+
+  .flex-container1 {
+    flex-direction: column;
+  }
+
+  .flex-container2 {
+    flex-direction: column;
+  }
+
+  .flex-container1 sidebar {
+    order: 1;
+    text-align: center;
+  }
+
+  .flex-container1 sidebar img {
+    width: 75%;
+  }
+
+  .flex-container3 {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 30px 50px;
+  }
+}
